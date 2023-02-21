@@ -4,7 +4,7 @@ const path=require('path')
 const app=express()
 const httpServer=createServer(app)
 app.use('/', express.static(path.join(__dirname, 'public')))
-httpServer.listen(5000, ()=>{
+httpServer.listen(process.env.PORT || 5000, ()=>{
 	console.clear()
 	console.log('\x1b[33m[Cardial Info]\x1b[0m : Server Uploaded')
 })
