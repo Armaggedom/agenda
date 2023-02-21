@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<title>oq estudar</title>
+</head>
+<body>
+	<div id="titleBox">
+		<label id="title">Você tem para estudar:</label>
+		<ul>
+			<li><button onclick="switcher(0, 1, 2);">Tutoria</button></li>
+			<li><button onclick="switcher(1, 0, 2);">Macro</button></li>
+			<li><button onclick="switcher(2, 1, 0);">Micro</button></li>
+		</ul>
+	</div>
+	<!-- box -->
+	<form>
+		<div class="boxFrame" id="boxMacro">
+			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
+			<label>Macro: (<label id="problemMac"> Problema 2</label> )</label>
+			<ul>
+				<li><input type="checkbox"/><span> Defina Vistíbulo da boca <span></li>
+				<li><input type="checkbox"/><span> Defina Cavidade bucal <span></li>
+				<li><input type="checkbox"/><span> Reconhecer ou citar as funções das seguintes estruturas que participam dos limites das cavidades, observando as peças anatômicas naturais e artificiais de cabeça: Cavidade oral Lábio superior e inferior; b. Vestíbulo da boca; c. Processo alveolar do maxilar; d. Processo alveolar da mandíbula; e. Palato Duro e Palato Mole; f. Língua; g. Istmo da Fauce: Arco Palatoglosso  Arco Palatofaríngeo  Úvula Palatina  Raiz da Língua (Tonsila Lingual)  Tonsila Palatin <span></li>
+				<li><input type="checkbox"/><span> Reconhecer nas peças anatômicas naturais e artificias de Lingua as seguintes estruturas:  Raiz e corpo; papilas gustativas (fungiformes, circunvaladas e folhadas);  Tonsilas linguais;  Ápice da língua;  Dorso da lingua; Sulco terminal;  Forame cego <span></li>
+				<li><input type="checkbox"/><span> Cite as funções das papilas gustativas e das tonsilas linguais <span></li>
+				<li><input type="checkbox"/><span> Reconhecer e citar as funções das glândulas salivares: Parótida (ducto parotídeo); Submandibular; Sublingual. Observando as peças anatômicas naturais e artificiais da cabeça <span></li>
+				<li><input type="checkbox"/><span> Identificar nas peças anatômicas naturais, artificiais e livros Atlas: fatinge (a. Parte ou Porção Nasal da Faringe ou nasofaringe; b. Parte ou Porção Oral da Faringe ou bucofaringe ou orofaringe; c. Parte ou Porção Laríngica da Faringe ou laringofaringe; d. Óstio Faríngeo da Tuba Auditiva e Toro Tubário) <span></li>
+				<li><input type="checkbox"/><span> Esôfago (a. Partes do Esôfago (cervical, torácica e abdominal) b. Constrições (cricóidea, aórtico-brônquica, diafragmática, gástrica ou cárdica) <span></li>
+				<li><input type="checkbox"/><span> Descrever as funções destes órgaos <span></li>
+				<li><input type="checkbox"/><span> Citar a importância de se conhecer suas constrições esofágicas <span></li>
+
+			</ul>
+		</div>
+		<div class="boxFrame" id="boxMicro">
+			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
+			<label>Micro: (<label id="problemMic"> Problema 2</label> )</label>
+			<ul>
+				<li><input type="checkbox"/><span> Descrever as seguintes estruturas responsáveis pelo aumento da superfície de absorção do intestion delgado (prega circular; vilosidades; microvilosidades) </span></li>
+				<li><input type="checkbox"/><span> Caracterizar histologicamente as seguintes túnicas do intestino delgado (mucosa; submucosa; muscular; serosa) </span></li>
+				<li><input type="checkbox"/><span> Caracterizar citologicamente e funcionalmente as seguintes células das criptas de Lieberkhün (ebterócitos; células caliciformes; células das regenerativas. células enteroendócrinas do intestino; células de Paneth) </span></li>
+				<li><input type="checkbox"/><span> Definir placa de Peyer e descrever o processo de formação das células M (microfold cells) destacando a sua função </span></li>
+				<li><input type="checkbox"/><span> Traçar as principais diferenças histológicas entre duodeno, jejuno e íleo considerando (pregas circulares; vilosidades; células caliciformes; Glandulas de Brunner; placas de Peyer) </span></li>
+				<li><input type="checkbox"/><span> Destacar as principais funções do intestino delgado relacionando essas funções com seus constituintes histológicos </span></li>
+			</ul>
+		</div>
+		<div class="boxFrame" id="boxTuto">
+			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
+			<label>Tutoria: (<label id="problemTut"> Problema 3</label> )</label>
+			<ul>
+				<li><input type="checkbox"/> <span> Descreva lipideos, função e classificação </span></li>
+				<li><input type="checkbox"/> <span> Citar as fontes e recomendações diárias (ácidos graxos essenciais) </span></li>
+				<li><input type="checkbox"/> <span> Descrever a digestão e absorção </span></li>
+				<li><input type="checkbox"/> <span> Descrever a síntese, transporte, e função das lipoproteinas (HDL; LDL; VLDL; IDL; quilomicron) </span></li>
+				<li><input type="checkbox"/> <span> Descrever a síntese e degradação das apoproteinas e suas funções </span></li>
+				<li><input type="checkbox"/> <span> Descrever o metabolismo do colesterol (prepulsor; função; órgaos envolvidos; enzimas regulatórias; excreção; tratamento farmacológico) </span></li>
+			</ul>
+		</div>
+	</form>
+	<script type="text/javascript">
+		const obj=[
+			"boxTuto",
+			"boxMacro",
+			"boxMicro"
+		]
+		function switcher(value, denyValue1, denyValue2) {
+			document.getElementById(obj[value]).style.transform="translateX(0%)"
+			document.getElementById(obj[denyValue1]).style.transform="translateX(-150%)"
+			document.getElementById(obj[denyValue2]).style.transform="translateX(-150%)"
+		}
+	</script>
+</body>
+</html>

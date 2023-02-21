@@ -1,0 +1,87 @@
+body {
+	background-color: #d9c9c9;
+}
+#titleBox {
+	color: white;
+	text-align: center !important;
+	list-style: none !important;
+}
+#titleBox label {
+	display: inline-block;
+  	padding: 0.5em 1em;
+  	font-size: 1.2em;
+  	color: #fff;
+  	background-color: #6B2C91;
+  	border: 1px solid #6B2C91;
+  	border-radius: 0.5em;
+  	text-transform: uppercase;
+  	letter-spacing: 0.1em;
+
+
+}
+#titleBox ul li {
+	display: inline;
+}
+.boxFrame {
+	margin-top: 1vh;
+	margin-right: 25%;
+	padding: 1em;
+	position: absolute;
+	background-color: #d4bfa2; 
+	color: #3c3c3c;
+	padding: 20px;
+	border-radius: 12px;
+  	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  	font-size: 1.2em;
+  	text-align: center;
+}
+.boxFrame ul {
+	list-style: none;
+  	margin: 0;
+	padding: 0;
+}
+.boxFrame li {
+	background-color: #e9d7b7 ;
+  	padding: 0.5em 1em;
+  	border-radius: 0.5em;
+  	margin-bottom: 0.5em;
+  	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  	color: #3c3c3c;
+}
+input[type="checkbox"] {
+	float: left;
+}
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+.clsButton {
+	padding-right: 5vw;
+	font-size: 4vh;
+}
+.clsButton:hover {
+	transition: 1s;
+	color: #6A5ACD;
+	font-size: 6vh;
+}
+#boxMacro, #boxMicro, #boxTuto{
+	transform-origin: left;
+	transform: translateX(-150%);
+	transition: 1s;
+}
+button {
+	background-color: #F0F0F0;
+	color: #656565;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #4F4F4F;
+	color: #FFFFFF;
+	transition: 0.4s;
+	transform: rotate(11.75deg);
+}
