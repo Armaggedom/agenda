@@ -57,13 +57,14 @@ input[type="checkbox"]:checked + span {
 .clsButton {
 	padding-right: 5vw;
 	font-size: 4vh;
+	cursor: pointer;
 }
 .clsButton:hover {
 	transition: 1s;
 	color: #6A5ACD;
 	font-size: 6vh;
 }
-#boxMacro, #boxMicro, #boxTuto{
+#boxMacro, #boxMicro, #boxTuto, #boxCm, #boxHabCli{
 	transform-origin: left;
 	transform: translateX(-150%);
 	transition: 1s;
@@ -78,6 +79,12 @@ button {
 	text-transform: uppercase;
 	transition: background-color 0.3s ease;
 	cursor: pointer;
+}
+button[disabled]:hover {
+	cursor: not-allowed !important;
+	transform: none !important;
+	transition: 0.4s;
+	background-color: rgba(94, 33, 41, 1) !important;
 }
 button:hover {
 	background-color: #4F4F4F;

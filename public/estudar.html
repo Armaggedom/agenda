@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+:file<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -10,13 +10,23 @@
 	<div id="titleBox">
 		<label id="title">Você tem para estudar:</label>
 		<ul>
-			<li><button onclick="switcher(0, 1, 2);">Tutoria</button></li>
-			<li><button onclick="switcher(1, 0, 2);">Macro</button></li>
-			<li><button onclick="switcher(2, 1, 0);">Micro</button></li>
+			<li><button onclick="switcher(0, 1, 2, 3, 4);">Tutoria</button></li> <!-- 0 -->
+			<li><button onclick="switcher(1, 0, 2, 3, 4);">Macro</button></li> <!-- 1 -->
+			<li><button onclick="switcher(2, 1, 0, 3, 4);">Micro</button></li> <!-- 2 -->
+			<li><button disabled onclick="switcher(3, 0, 1, 2, 4);">Comp. Médicas</button></li> <!-- 3 -->
+			<li><button disabled onclick="switcher(4, 0, 1, 2, 3);">Hab. Clínicas</button></li> <!-- 4 -->
 		</ul>
 	</div>
 	<!-- box -->
 	<form>
+		<div class="boxFrame" id="boxHabCli">
+			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
+			<label>Habilidades Clínicas: (<label id="problemMac"> Semiotécnica I</label> )</label>
+		</div>
+		<div class="boxFrame" id="boxCM">
+			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
+			<label>Compentencias médicas: </label>
+		</div>
 		<div class="boxFrame" id="boxMacro">
 			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
 			<label>Macro: (<label id="problemMac"> Problema 2</label> )</label>
@@ -63,12 +73,16 @@
 		const obj=[
 			"boxTuto",
 			"boxMacro",
-			"boxMicro"
+			"boxMicro",
+			"boxCM",
+			"boxHabCli"
 		]
-		function switcher(value, denyValue1, denyValue2) {
+		function switcher(value, denyValue1, denyValue2, denyValue3, denyValue4) {
 			document.getElementById(obj[value]).style.transform="translateX(0%)"
 			document.getElementById(obj[denyValue1]).style.transform="translateX(-150%)"
 			document.getElementById(obj[denyValue2]).style.transform="translateX(-150%)"
+			document.getElementById(obj[denyValue3]).style.transform="translateX(-150%)"
+			document.getElementById(obj[denyValue4]).style.transform="translateX(-150%)"
 		}
 	</script>
 </body>
