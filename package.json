@@ -1,7 +1,7 @@
 {
 	"name": "agenda",
 	"version": "1.2.0",
-	"description": "atualização de tema e aguardando lista de Tutoria para habilitar",
+	"description": "lista de Tutoria divulgada",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
