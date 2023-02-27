@@ -8,14 +8,14 @@ body {
 }
 #titleBox label {
 	display: inline-block;
-  	padding: 0.5em 1em;
-  	font-size: 1.2em;
-  	color: #fff;
-  	background-color: #6B2C91;
-  	border: 1px solid #6B2C91;
-  	border-radius: 0.5em;
-  	text-transform: uppercase;
-  	letter-spacing: 0.1em;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #6B2C91;
+  border: 1px solid #6B2C91;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 
 
 }
@@ -31,13 +31,13 @@ body {
 	color: #3c3c3c;
 	padding: 20px;
 	border-radius: 12px;
-  	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  	font-size: 1.2em;
-  	text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  text-align: center;
 }
 .boxFrame ul {
 	list-style: none;
-  	margin: 0;
+  margin: 0;
 	padding: 0;
 }
 .boxFrame li {
@@ -64,7 +64,7 @@ input[type="checkbox"]:checked + span {
 	color: #6A5ACD;
 	font-size: 6vh;
 }
-#boxMacro, #boxMicro, #boxTuto, #boxCm, #boxHabCli{
+#boxMacro, #boxMicro, #boxTuto, #boxCM, #boxHabCli{
 	transform-origin: left;
 	transform: translateX(-150%);
 	transition: 1s;
