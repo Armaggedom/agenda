@@ -1,0 +1,37 @@
+{
+	"Tutoria":{
+		"problem":"tituloDoProblema",
+		"block":[
+			"cadaBlocoLevaUmaString",
+			"exemplo"
+		]
+	},
+	"Macro":{
+		"problem":"tituloDoProblema",
+		"block":[
+			"cadaBlocoLevaUmaString",
+			"exemplo"
+		]
+	},
+	"Micro":{
+		"problem":"tituloDoProblema",
+		"block":[
+			"cadaBlocoLevaUmaString",
+			"exemplo"
+		]
+	},
+	"ComMEd":{
+		"problem":"tituloDoProblema",
+		"block":[
+			"cadaBlocoLevaUmaString",
+			"exemplo"
+		]
+	},
+	"HabCli":{
+		"problem":"tituloDoProblema",
+		"block":[
+			"cadaBlocoLevaUmaString",
+			"exemplo"
+		]
+	}
+}

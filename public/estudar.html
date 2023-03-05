@@ -10,7 +10,7 @@
 	<div id="titleBox">
 		<label id="title">Você tem para estudar:</label>
 		<ul>
-			<li><button onclick="switcher(0, 1, 2, 3, 4);">Tutoria</button></li> <!-- 0 -->
+			<li><button disabled onclick="switcher(0, 1, 2, 3, 4);">Tutoria</button></li> <!-- 0 -->
 			<li><button onclick="switcher(1, 0, 2, 3, 4);">Macro</button></li> <!-- 1 -->
 			<li><button onclick="switcher(2, 1, 0, 3, 4);">Micro</button></li> <!-- 2 -->
 			<li><button onclick="switcher(3, 0, 1, 2, 4);">Comp. Médicas</button></li> <!-- 3 -->
@@ -21,14 +21,14 @@
 	<form>
 		<div class="boxFrame" id="boxHabCli">
 			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
-			<label>Habilidades Clínicas: (<label id="problemMac"> Semiotécnica I</label> )</label>
+			<label>Habilidades Clínicas: ( <label id="problemHabCli">Semiotécnica I</label> )</label>
 			<ul>
 				<li><span> Bioética </span></li>
 			</ul>
 		</div>
 		<div class="boxFrame" id="boxCM">
 			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
-			<label>Compentencias médicas: Vulnerabilidade</label>
+			<label>Compentencias médicas: ( <label id="problemMC">Vulnerabilidade</label> )</label>
 			<ul>
 				<li><input type="checkbox"/> <span>Compreender o referencial conceitual da Vulnerabilidade</span></li>
 				<li><input type="checkbox"/> <span>Diferenciar risco de vulnerabilidade</span></li>
@@ -38,58 +38,77 @@
 		</div>
 		<div class="boxFrame" id="boxMacro">
 			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
-			<label>Macro: (<label id="problemMac"> Problema 3</label> )</label>
+			<label>Macro: (<label id="problemMac"> Problema 4</label> )</label>
 			<ul>
-				<li><input type="checkbox"/><span> Estudar o PERITÔNIO (diferenciar e reconhecer a lâmina parietal da lamina visceral) <span></li>
-				<li><input type="checkbox"/><span> Explicar e Identificar o que é: 
- Cavidade Peritoneal,
- Bolsa Omental, 
- Compartimento Supramesocólico (ou Supracólico), 
- Compartimento Inframesocólico (ou Infracólico) e 
- Cavidade Abdomino-pélvica <span></li>
-				<li><input type="checkbox"/><span> Nas peças anatômicas naturais e/ou artificiais, reconhecer, com auxílio do Atlas:
- Mesentério e Omento (ou Epíplon) <span></li>
-				<li><input type="checkbox"/><span> Explicar a função dos ligamentos mesentério e omento <span></li>
-				<li><input type="checkbox"/><span> Com o entendimento das lâminas do peritônio e de sua origem embrionária:
- Identificar e explicar o que e quais são as vísceras peritonizadas e retroperitoniais. <span></li>
-				<li><input type="checkbox"/><span>Descreva a posição anatômica do Estômago no abdome.
-</span></li>
-				<li><input type="checkbox"/><span> Reconhecer as regiões e estruturas do Estômago, observando as peças anatômicas naturais e artificiais:  Regiões (Partes): Corpo, Fundo, Cárdia (ou Parte Cárdica) e Parte Pilórica (*Piloro);  Estruturas do corpo gástrico: Curvatura Maior, Curvatura Menor, Incisura Cárdica e Incisura 
-Angular,
- Esfíncter Pilórico.
+				<li><input type="checkbox"/><span>Identifique nas peças anatômicas naturais, artificiais de FÍGADO com auxílio do Atlas:
+ As faces do fígado: diafragmática e visceral;
+ Os lobos do fígado: direito, esquerdo, caudado e quadrado;
+ Os ligamentos do fígado: redondo, venoso e falciforme;
+ Vesícula Biliar 
+ O Hilo Hepático com seus elementos: Artéria Hepática, Veia Porta, ”Dutos Hepáticos”. <span></li>
+				<li><input type="checkbox"/><span>Identificar e reconhecer a posição anatômica do Fígado<span></li>
+				<li><input type="checkbox"/><span>Cite as funções dos ligamentos e dos elementos do Hilo Hepático.<span></li>
+				<li><input type="checkbox"/><span>Identifique nas peças anatômicas naturais, artificiais e Atlas:
+ Vesícula Biliar (colo, corpo e fundo).
+ Ductos Biliares (Ducto Hepático Comum, Ducto Cístico e Ducto Colédoco).
+ Veia Porta e a Veia Mesentérica Superior.<span></li>
+				<li><input type="checkbox"/><span>Esquematize a formação das “Vias Biliares” citando a função de cada elemento.<span></li>
+				<li><input type="checkbox"/><span>Descreva a formação e a função (dos vasos que compõe) o Sistema Porta-Hepático<span></li>
+				<li><input type="checkbox"/><span>Descreva a formação da Ampola Hepatopancreática<span></li>
+				<li><input type="checkbox"/><span>Descreva o PÂNCREAS (sua localização anatômica, suas divisões e sua função).<span></li>
+				<li><input type="checkbox"/><span>Identificar no Pâncreas. 
+ Cabeça
+ Colo
+ Corpo
+ Cauda<span></li>
+				<li><input type="checkbox"/><span>Descrever a relação das vísceras acima com o Peritônio.
+►INTESTINO DELGADO
+1- Descrever as Partes (Porções) do Intestino Delgado:
+2- Identifique nas peças anatômicas naturais, artificiais de DUODENO, com auxílio de Atlas:
+ Parte superior;
+ Parte descendente (Papila Duodenal Maior e Menor);
+ Parte inferior;
+ Parte ascendente;
+ Curvatura ou Flexura Duodenojejunal.
+3- Reconhecer e citar as funções das divisões do Intestino Delgado, observando as peças anatômicas naturais e 
+artificiais.
+4- Localize o Duodeno nas peças anatômicas naturais e artificiais.
+5- Observe a relação do Duodeno com as “Vias Biliares”.
+6- Descrever a relação das vísceras acima com o Peritônio.
+<span></li>
 
- Estruturas do corpo gástrico: Curvatura Maior, Curvatura Menor, Incisura Cárdica e Incisura 
-Angular,
- Esfíncter Pilórico <span></li>
-				<li><input type="checkbox"/><span> Descrever a relação desta víscera com o Peritônio. <span></li>
 			</ul>
 		</div>
 		<div class="boxFrame" id="boxMicro">
 			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
 			<label>Micro: (<label id="problemMic"> Problema 3</label> )</label>
 			<ul>
-				<li><input type="checkbox"/><span> Descrever as seguintes estruturas responsáveis pelo aumento da superfície de absorção do intestino delgado: a) prega 
-circular, b) vilosidades e c) microvilosidades. </span></li>
-				<li><input type="checkbox"/><span> Caracterizar histologicamente as seguintes túnicas do intestino delgado: a) mucosa, b) submucosa, c) muscular e d) 
-serosa </span></li>
-				<li><input type="checkbox"/><span> Caracterizar citologicamente e funcionalmente as seguintes células das criptas de Lieberkhün: a) enterócitos (ou células 
-absortivas superficiais), b) células caliciformes, c) células regenerativas, d) células enteroendócrinas do intestino e f) células 
-de Paneth </span></li>
-				<li><input type="checkbox"/><span> Definir placa de Peyer e descrever o processo de formação das células M (microfold cells) destacando a sua função. </span></li>
-				<li><input type="checkbox"/><span> Traçar as principais diferenças histológicas entre duodeno, jejuno e íleo considerando: a) pregas circulares, b) 
-vilosidades, c) células caliciformes, d) glândulas de Brunner e f) placas de Peyer </span></li>
-				<li><input type="checkbox"/><span> Destacar as principais funções do intestino delgado relacionando essas funções com seus constituintes histológicos </span></li>
-			</ul>
+				<li><input type="checkbox"/><span>Listar as principais funções do fígado</span></li>
+				<li><input type="checkbox"/><span>Caracterizar o revestimento externo do fígado considerando o peritônio visceral e a cápsula de Glisson.</span></li>
+				<li><input type="checkbox"/><span>Descrever um lóbulo hepático clássico citando a localização das seguintes estruturas: a) veia central, b) placas de 
+hepatócitos, c) sinusoides hepáticos e d) espaço porta.</span></li>
+				<li><input type="checkbox"/><span>Listar os constituintes do espaço porta.</span></li>
+				<li><input type="checkbox"/><span>Descrever o trajeto do sangue no fígado desde a artéria hepática até a veia cava.</span></li>
+				<li><input type="checkbox"/><span>Descrever o trajeto da bile desde o canalículo biliar até a vesícula biliar.</span></li>
+				<li><input type="checkbox"/><span>Definir e localizar os canais de Hering considerando suas células de revestimento.</span></li>
+				<li><input type="checkbox"/><span>Caracterizar citologicamente e funcionalmente as seguintes células constituintes dos sinusoides hepáticos: a) células 
+endoteliais e b) células de Kupffer.</span></li>
+				<li><input type="checkbox"/><span>Definir espaço de Disse.</span></li>
+				<li><input type="checkbox"/><span>Indicar a localização e a função da célula de Ito.</span></li>
+				<li><input type="checkbox"/><span>Caracterizar histologicamente as túnicas da vesícula biliar identificando a região da adventícia e da serosa.</span></li>
+				<li><input type="checkbox"/><span>Destacar as principais funções da vesícula biliar relacionando essas funções com seus constituintes histológicos.</span></li>
+				<li><input type="checkbox"/><span>Diferenciar histologicamente a parte exócrina do pâncreas formada pelos ácinos serosos da parte endócrina formada 
+pelas ilhotas de Langerhans.</span></li>
+				<li><input type="checkbox"/><span>Descrever histologicamente e funcionalmente os seguintes constituintes da parte exócrina do pâncreas: a) ácino 
+pancreático, b) ducto intercalar, c) ducto intralobular, d) ducto interlobular e e) ducto principal.</span></li>
+				<li><input type="checkbox"/><span>Caracterizar citologicamente, funcionalmente e em termos de localização as células acinosas e as células centro-acinosas</span></li>
+ 			</ul>
 		</div>
 		<div class="boxFrame" id="boxTuto">
-			<label>Tutoria: (<label id="problemTut"> Problema 4</label> )</label>
+			<label class="clsButton" onclick="this.parentElement.style.transform='translateX(-150%)';">&times;</label>
+			<label>Tutoria: (<label id="problemTut"> loading </label> )</label>
 			<ul>
-				<li><input type="checkbox"/> <span>Descrever a gliconeogenese, suas 3 vias e desvios</span></li>
-				<li><input type="checkbox"/> <span>Descreva regulação endogena e hormonal dos macronutrientes (Insulina, glucagon, GH, cortisol, adrenalina, T3 e T4)</span></li>
-				<li><input type="checkbox"/> <span>Descreva a Lipogenese (TAG e AG	)</span></li>
-				<li><input type="checkbox"/> <span>Descrever mediadores lipidicos (Sintese e função)</span></li>
-				<li><input type="checkbox"/> <span>Descreva estados metabolicos. (Jejum, pôs prondial e jejum prolongado)</span></li>
-				<li><input type="checkbox"/> <span>Explicar os principios gerais do tratamento da diabetes tipo 2</span></li>
+				<!-- <li><input type="checkbox"/> <span></span></li> -->
 			</ul>
 		</div>
 	</form>

@@ -1,0 +1,37 @@
+body {
+	background-color: #d9c9c9;
+}
+#titleBox {
+	color: white;
+	text-align: center !important;
+	list-style: none !important;
+}
+#titleBox label {
+	display: inline-block;
+  	padding: 0.5em 1em;
+  	font-size: 1.2em;
+  	color: #fff;
+  	background-color: #6B2C91;
+  	border: 1px solid #6B2C91;
+  	border-radius: 0.5em;
+  	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+#main {
+	margin-top: 1vh;
+	margin-right: 25%;
+	padding: 1em;
+	position: absolute;
+	background-color: #d4bfa2; 
+	color: #3c3c3c;
+	padding: 20px;
+	border-radius: 12px;
+  	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  	font-size: 1.2em;
+	text-align: center;
+}
+#main ul {list-style: none;}
+#main ul li {display: inline;}
+#boxTuto,#boxMacro,#boxMicro,#boxCM,#boxHabCli {
+	text-align: center;
+}
